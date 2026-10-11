@@ -24,7 +24,7 @@ Check the popup opens, dark mode toggles, preferences survive a page reload, and
 
 This repository contains the complete Xcode project and extension resources, including the upstream AGPL-3.0 license. Open its `.xcodeproj` to edit it. For a signed build, choose your Apple development team for both the app and extension targets, and keep the app/extension bundle identifiers consistent.
 
-The only JavaScript change guards the unsupported uninstall callback. The generated project’s app bundle identifier was corrected to match the extension identifier prefix. The upstream interface and features are retained.
+The only JavaScript change guards the unsupported uninstall callback. The generated project’s app bundle identifier was corrected to match the extension identifier prefix. The popup root has an explicit width and its decorative gradient stays within the page bounds to prevent a blank strip in Safari. The upstream interface and features are retained.
 
 Upstream: https://github.com/UseBetterCanvas/bettercanvas
 Source revision: c7d8bad4e6c2c10589f07e4497e0080a8cc2825a
